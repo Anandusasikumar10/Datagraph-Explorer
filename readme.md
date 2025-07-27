@@ -4,7 +4,7 @@ A command-line Python tool for **loading**, **exploring**, and **visualizing** C
 
 ---
 
-## 🚀 Features
+## 🚀 Features          
 
 - 🔄 Load CSVs from:
   - 📂 Local file paths
@@ -40,16 +40,16 @@ pip install pandas numpy matplotlib requests
 
 ---
 
-##🧠 How to Use
+**##🧠 How to Use**
 ▶️ Run the Script
 bash
 Copy
 Edit
-python csv_plotter.py
+python main.py
 
 ---
 
-## 📊 Example Output
+**## 📊 Example Output**
 Visualizing Sepal Length vs Petal Width (Iris dataset):
 Column Headings:
 ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
@@ -65,7 +65,7 @@ Enter the column name for X-axis:
 
 ---
 
-## ✅ Example Use Cases
+**## ✅ Example Use Cases**
 Exploratory Data Analysis (EDA)
 
 Teaching data science concepts
@@ -76,7 +76,7 @@ Lightweight CLI-based graph generation
 
 ---
 
-## 📌 Future Enhancements (PRs welcome!)
+**## 📌 Future Enhancements (PRs welcome!)**
 Add CSV export of filtered/processed data
 
 Advanced plotting: histograms, box plots
