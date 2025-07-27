@@ -1,46 +1,82 @@
-# 📊 DataGraph Explorer
+# 📊 CSV Plotter — Interactive CSV Data Visualizer
 
-*A lightweight Python tool to load, visualize, and interpret CSV data with insight and ease.*
-
----
-
-## 🔍 Overview
-
-DataGraph Explorer is a command-line Python application that helps users explore datasets visually. Whether you're loading a file from your device, a public URL, or using the built-in Iris dataset — this tool gives you clarity through scatter/line plots and simple insights.
-
-Designed for:
-- Learners who want to understand patterns in data  
-- Developers needing a quick dataset probe  
-- Anyone curious to graph without touching Excel or Pandas head-first
+A command-line Python tool for **loading**, **exploring**, and **visualizing** CSV datasets with ease. Designed to support fast experimentation, lightweight data inspection, and quick visual interpretations — all in a single script.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-✅ Flexible CSV Input  
-• Load files from:  
-  - Local file path  
-  - Online URL  
-  - Default: Iris dataset  
+- 🔄 Load CSVs from:
+  - 📂 Local file paths
+  - 🌐 Online URLs
+  - 🧠 A default hardcoded dataset (Iris)
 
-✅ Quick Data Peek  
-• View column headings and first two rows of data
+- 📌 Column-wise visualization:
+  - Select 1 or 2 columns
+  - Choose plot type: `scatter` or `line`
+  - Supports single-series plots against index
 
-✅ Interactive Visualization  
-• Plot 1-column or 2-column graphs  
-• Choose between scatter and line plots  
+- 📉 Auto-interprets plotted graphs:
+  - Understand axis roles (independent/dependent)
+  - Highlights what trends or patterns to look for
 
-✅ Simple Interpretations  
-• Get auto-generated text insights for each plot
-
-✅ Looped Workflow  
-• Run multiple graph combinations without restarting
+- 🔁 Repeatable plotting:
+  - Explore multiple column combinations without restarting the script
 
 ---
 
-## ⚙️ Requirements
+## 🛠️ Dependencies
 
-- Python 3.x  
-- Install dependencies:
+- Python 3.7+
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `requests`
+
+Install them with:
+
 ```bash
 pip install pandas numpy matplotlib requests
+
+
+🧠 How to Use
+▶️ Run the Script
+bash
+Copy
+Edit
+python csv_plotter.py
+
+
+
+
+📊 Example Output
+Visualizing Sepal Length vs Petal Width (Iris dataset):
+Column Headings:
+['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+
+First Two Rows:
+   sepal_length  sepal_width  petal_length  petal_width species
+0           5.1          3.5           1.4          0.2  setosa
+1           4.9          3.0           1.4          0.2  setosa
+
+Available columns: ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+Enter the column name for X-axis:
+<sub>Sample visualization using default dataset</sub>
+
+✅ Example Use Cases
+Exploratory Data Analysis (EDA)
+
+Teaching data science concepts
+
+Quick visual insights on unfamiliar CSVs
+
+Lightweight CLI-based graph generation
+
+📌 Future Enhancements (PRs welcome!)
+Add CSV export of filtered/processed data
+
+Advanced plotting: histograms, box plots
+
+GUI version with Tkinter or Streamlit
+
+Data type inference and automatic plot suggestions
