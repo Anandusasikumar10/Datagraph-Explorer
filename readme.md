@@ -38,6 +38,7 @@ Install them with:
 ```bash
 pip install pandas numpy matplotlib requests
 
+---
 
 🧠 How to Use
 ▶️ Run the Script
@@ -46,8 +47,7 @@ Copy
 Edit
 python csv_plotter.py
 
-
-
+---
 
 📊 Example Output
 Visualizing Sepal Length vs Petal Width (Iris dataset):
@@ -63,6 +63,8 @@ Available columns: ['sepal_length', 'sepal_width', 'petal_length', 'petal_width'
 Enter the column name for X-axis:
 <sub>Sample visualization using default dataset</sub>
 
+---
+
 ✅ Example Use Cases
 Exploratory Data Analysis (EDA)
 
@@ -71,6 +73,8 @@ Teaching data science concepts
 Quick visual insights on unfamiliar CSVs
 
 Lightweight CLI-based graph generation
+
+---
 
 📌 Future Enhancements (PRs welcome!)
 Add CSV export of filtered/processed data
